@@ -9,7 +9,6 @@ if(USE_AZURE == 1){
     QUERY_STR = "SELECT * from Products";
 }
 
-console.log(QUERY_STR);
 const sql = require('mssql');
 
 async function getProducts() {
