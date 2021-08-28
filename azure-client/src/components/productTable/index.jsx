@@ -25,7 +25,10 @@ const ProductTable = () => {
                     }))
                 );
             }
-        );
+        ).catch(error => {
+            setloading(false);
+            setstate([]);
+        });
     };
 
     const columns = [
