@@ -20,6 +20,6 @@ router.route('/products').get((request, response) => {
     })
 })
 
-var port = process.env.PORT || 8090;
+var port = process.env.PORT || 8080;
 app.listen(port);
 console.log('Order API is runnning at ' + port);
