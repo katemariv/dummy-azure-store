@@ -8,6 +8,9 @@ import ProductTable from './components/productTable';
 function App() {
   const REACT_APP_SERVER_NAME = process.env.REACT_APP_SERVER_NAME || 'No Server specified';
 
+  const UI_PORT = process.env.PORT || "3000";
+  console.log("UI Running on Port " + UI_PORT);
+
   return (
     <div className="App">
       <Layout className="layout">
